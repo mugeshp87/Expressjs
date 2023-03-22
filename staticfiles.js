@@ -4,8 +4,8 @@ var path = require('path');
 var PORT = 3000;
  
 // Static Middleware
-app.use(express.static(path.join(__dirname, 'public')))
-   
+app.use(express.static(path.join(__dirname, "public/images")))
+  console.log(__dirname) 
 app.get('/', function (req, res, next) {
     res.render('home.ejs');
 })
